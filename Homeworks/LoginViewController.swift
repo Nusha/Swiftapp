@@ -32,9 +32,9 @@ class LoginViewController: UIViewController {
             textField.placeholder = "Логин"
             textField.borderStyle = .roundedRect
             textField.translatesAutoresizingMaskIntoConstraints = false
-            textField.layer.borderWidth = 2.0
+            textField.layer.borderWidth = 1.0
             textField.layer.borderColor = UIColor.black.cgColor
-            textField.layer.cornerRadius = 10.0
+            textField.layer.cornerRadius = 5.0
             return textField
         }()
 
@@ -43,9 +43,10 @@ class LoginViewController: UIViewController {
             textField.placeholder = "Пароль"
             textField.borderStyle = .roundedRect
             textField.translatesAutoresizingMaskIntoConstraints = false
-            textField.layer.borderWidth = 2.0
+            textField.isSecureTextEntry = true
+            textField.layer.borderWidth = 1.0
             textField.layer.borderColor = UIColor.black.cgColor
-            textField.layer.cornerRadius = 10.0
+            textField.layer.cornerRadius = 5.0
             return textField
         }()
 
@@ -55,10 +56,11 @@ class LoginViewController: UIViewController {
             button.setTitle("Войти", for: .normal)
             button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 24)
             button.translatesAutoresizingMaskIntoConstraints = false
-            button.backgroundColor = .green
+            button.backgroundColor = .black
+            button.setTitleColor(.white, for: .normal)
             button.layer.borderWidth = 2.0
             button.layer.borderColor = UIColor.black.cgColor
-            button.layer.cornerRadius = 10.0
+            button.layer.cornerRadius = 5.0
             return button
         }()
 
@@ -97,8 +99,8 @@ class LoginViewController: UIViewController {
 
                 loginButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
                 loginButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-                loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 20),
-                loginButton.heightAnchor.constraint(equalToConstant: 40)
+                loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 40),
+                loginButton.heightAnchor.constraint(equalToConstant: 60)
             ])
         }
     }
