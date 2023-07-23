@@ -46,16 +46,29 @@ final class GroupCell: UITableViewCell {
         subtitle.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            groupImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            groupImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
-            groupImageView.heightAnchor.constraint(equalTo: contentView.heightAnchor, constant: 50),
-            groupImageView.widthAnchor.constraint(equalTo: contentView.widthAnchor),
-            title.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
-            title.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
-            title.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
-            subtitle.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 10),
-            subtitle.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
-            subtitle.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10)
+                   groupImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+                   groupImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+                   groupImageView.heightAnchor.constraint(equalToConstant: 50),
+                   groupImageView.widthAnchor.constraint(equalToConstant: 50),
+                   
+                   title.topAnchor.constraint(equalTo: groupImageView.bottomAnchor, constant: 10),
+                   title.leadingAnchor.constraint(equalTo: groupImageView.trailingAnchor, constant: 10),
+                   title.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
+                   
+                   subtitle.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 10),
+                   subtitle.leadingAnchor.constraint(equalTo: groupImageView.trailingAnchor, constant: 10),
+                   subtitle.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
+                   subtitle.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10)
+//            groupImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+//            groupImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+//            groupImageView.heightAnchor.constraint(equalTo: contentView.heightAnchor, constant: 50),
+//            groupImageView.widthAnchor.constraint(equalTo: contentView.widthAnchor),
+//            title.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+//            title.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+//            title.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
+//            subtitle.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 10),
+//            subtitle.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+//            subtitle.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10)
                                     ])
         
     }
@@ -63,15 +76,15 @@ final class GroupCell: UITableViewCell {
     
     
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+//    override func awakeFromNib() {
+//        super.awakeFromNib()
+//        // Initialization code
+//    }
+//
+//    override func setSelected(_ selected: Bool, animated: Bool) {
+//        super.setSelected(selected, animated: animated)
+//
+//        // Configure the view for the selected state
+//    }
 
 }

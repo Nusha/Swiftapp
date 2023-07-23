@@ -37,10 +37,6 @@ final class FriendViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-
-        // Configure the cell...
-
         return FriendCell()
     }
     

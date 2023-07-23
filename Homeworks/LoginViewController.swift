@@ -67,6 +67,7 @@ class LoginViewController: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
             setupUI()
+            loginButton.addTarget(self, action: #selector(tap), for: .touchUpInside)
         }
 
         func setupUI() {
@@ -102,5 +103,27 @@ class LoginViewController: UIViewController {
                 loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 40),
                 loginButton.heightAnchor.constraint(equalToConstant: 60)
             ])
+        }
+    
+    @objc private func tap() {
+        let tab1 = UINavigationController(rootViewController: FriendViewController())
+        let tab2 = UINavigationController(rootViewController: GroupsViewController())
+        let tab3 = UINavigationController(rootViewController: PhotosViewController())
+        
+        tab1.tabBarItem.title = "Friends"
+        tab2.tabBarItem.title = "Groups"
+        tab3.tabBarItem.title = "Photos"
+        
+        let controllers = [tab1, tab2, tab3]
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = controllers
+        
+        guard let firstScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+              let firstWindow = firstScene.windows.first
+        else {
+            return
+            }
+        firstWindow.rootViewController = tabBarController
         }
     }
