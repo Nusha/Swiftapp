@@ -41,6 +41,22 @@ final class GroupCell: UITableViewCell {
     }
     
     private func setupConstraints() {
+        groupImageView.translatesAutoresizingMaskIntoConstraints = false
+        title.translatesAutoresizingMaskIntoConstraints = false
+        subtitle.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            groupImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            groupImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+            groupImageView.heightAnchor.constraint(equalTo: contentView.heightAnchor, constant: 50),
+            groupImageView.widthAnchor.constraint(equalTo: contentView.widthAnchor),
+            title.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+            title.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+            title.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
+            subtitle.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 10),
+            subtitle.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+            subtitle.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10)
+                                    ])
         
     }
     
