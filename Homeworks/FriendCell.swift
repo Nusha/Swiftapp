@@ -19,7 +19,7 @@ final class FriendCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         backgroundColor = .clear
-//        setupViews()
+        setupViews()
     }
     
     required init?(coder: NSCoder) {
@@ -36,10 +36,23 @@ final class FriendCell: UITableViewCell {
         friendImageView.translatesAutoresizingMaskIntoConstraints = false
         text.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
+            // Constraints for friendImageView
             friendImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             friendImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
-            friendImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10)
+            friendImageView.widthAnchor.constraint(equalToConstant: 40),
+            friendImageView.heightAnchor.constraint(equalToConstant: 40),
+
+            // Constraints for text label
+            text.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            text.leadingAnchor.constraint(equalTo: friendImageView.trailingAnchor, constant: 10),
+            text.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10)
         ])
+    }
+//        NSLayoutConstraint.activate([
+//            friendImageView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+//            friendImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+//            friendImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10)
+//        ])
     }
         
         
@@ -60,4 +73,4 @@ final class FriendCell: UITableViewCell {
 //        // Configure the view for the selected state
 //    }
 
-}
+

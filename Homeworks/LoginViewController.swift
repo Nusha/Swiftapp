@@ -108,7 +108,7 @@ class LoginViewController: UIViewController {
     @objc private func tap() {
         let tab1 = UINavigationController(rootViewController: FriendViewController())
         let tab2 = UINavigationController(rootViewController: GroupsViewController())
-        let tab3 = UINavigationController(rootViewController: PhotosViewController())
+        let tab3 = UINavigationController(rootViewController: PhotosViewController(collectionViewLayout: UICollectionViewFlowLayout()))
         
         tab1.tabBarItem.title = "Friends"
         tab2.tabBarItem.title = "Groups"
