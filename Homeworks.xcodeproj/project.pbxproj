@@ -30,6 +30,7 @@
 		9F3E8B672A6DBE2E00714F7E /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		9F3E8B692A6DC03C00714F7E /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		9F3E8B6B2A6DCC2B00714F7E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9FB0E6332AB8DDDE0063B81B /* main.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = main.md; sourceTree = "<group>"; };
 		9FB721192A5867E80076AC95 /* Homeworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homeworks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB7211C2A5867E80076AC95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FB7211E2A5867E80076AC95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 				9F3E8B672A6DBE2E00714F7E /* PhotosViewController.swift */,
 				9F3E8B692A6DC03C00714F7E /* PhotoCell.swift */,
 				9F3E8B6B2A6DCC2B00714F7E /* Constants.swift */,
+				9FB0E6332AB8DDDE0063B81B /* main.md */,
 			);
 			path = Homeworks;
 			sourceTree = "<group>";
