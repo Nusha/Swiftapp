@@ -21,6 +21,8 @@
 		9FB721292A5867EF0076AC95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FB721272A5867EF0076AC95 /* LaunchScreen.storyboard */; };
 		9FB721312A586A7B0076AC95 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB721302A586A7B0076AC95 /* LoginViewController.swift */; };
 		9FF9EB092B1D0CCC00C7E7F2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF9EB082B1D0CCB00C7E7F2 /* NetworkService.swift */; };
+		9FF9EB0C2B1D189200C7E7F2 /* FriendsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF9EB0B2B1D189200C7E7F2 /* FriendsModel.swift */; };
+		9FF9EB0E2B1D2D9D00C7E7F2 /* GroupsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF9EB0D2B1D2D9D00C7E7F2 /* GroupsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		9FB7212A2A5867EF0076AC95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FB721302A586A7B0076AC95 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9FF9EB082B1D0CCB00C7E7F2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		9FF9EB0B2B1D189200C7E7F2 /* FriendsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsModel.swift; sourceTree = "<group>"; };
+		9FF9EB0D2B1D2D9D00C7E7F2 /* GroupsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 		9FB7211B2A5867E80076AC95 /* Homeworks */ = {
 			isa = PBXGroup;
 			children = (
+				9FF9EB0A2B1D184200C7E7F2 /* Models */,
 				9FF9EB072B1D0B3600C7E7F2 /* Services */,
 				9FB7211C2A5867E80076AC95 /* AppDelegate.swift */,
 				9FB7211E2A5867E80076AC95 /* SceneDelegate.swift */,
@@ -99,6 +104,15 @@
 				9FF9EB082B1D0CCB00C7E7F2 /* NetworkService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		9FF9EB0A2B1D184200C7E7F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9FF9EB0B2B1D189200C7E7F2 /* FriendsModel.swift */,
+				9FF9EB0D2B1D2D9D00C7E7F2 /* GroupsModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +194,9 @@
 				9FB721212A5867E80076AC95 /* ViewController.swift in Sources */,
 				9F3E8B6A2A6DC03C00714F7E /* PhotoCell.swift in Sources */,
 				9FB7211D2A5867E80076AC95 /* AppDelegate.swift in Sources */,
+				9FF9EB0C2B1D189200C7E7F2 /* FriendsModel.swift in Sources */,
 				9FB7211F2A5867E80076AC95 /* SceneDelegate.swift in Sources */,
+				9FF9EB0E2B1D2D9D00C7E7F2 /* GroupsModel.swift in Sources */,
 				9FF9EB092B1D0CCC00C7E7F2 /* NetworkService.swift in Sources */,
 				9F3E8B662A6CAA7A00714F7E /* GroupCell.swift in Sources */,
 			);
