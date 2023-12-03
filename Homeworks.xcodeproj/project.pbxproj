@@ -23,6 +23,8 @@
 		9FF9EB092B1D0CCC00C7E7F2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF9EB082B1D0CCB00C7E7F2 /* NetworkService.swift */; };
 		9FF9EB0C2B1D189200C7E7F2 /* FriendsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF9EB0B2B1D189200C7E7F2 /* FriendsModel.swift */; };
 		9FF9EB0E2B1D2D9D00C7E7F2 /* GroupsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF9EB0D2B1D2D9D00C7E7F2 /* GroupsModel.swift */; };
+		9FF9EB102B1D2FE800C7E7F2 /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF9EB0F2B1D2FE800C7E7F2 /* PhotosModel.swift */; };
+		9FF9EB122B1D30EE00C7E7F2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF9EB112B1D30EE00C7E7F2 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		9FF9EB082B1D0CCB00C7E7F2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		9FF9EB0B2B1D189200C7E7F2 /* FriendsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsModel.swift; sourceTree = "<group>"; };
 		9FF9EB0D2B1D2D9D00C7E7F2 /* GroupsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsModel.swift; sourceTree = "<group>"; };
+		9FF9EB0F2B1D2FE800C7E7F2 /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
+		9FF9EB112B1D30EE00C7E7F2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 			children = (
 				9FF9EB0B2B1D189200C7E7F2 /* FriendsModel.swift */,
 				9FF9EB0D2B1D2D9D00C7E7F2 /* GroupsModel.swift */,
+				9FF9EB0F2B1D2FE800C7E7F2 /* PhotosModel.swift */,
+				9FF9EB112B1D30EE00C7E7F2 /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,7 +201,9 @@
 				9F3E8B6A2A6DC03C00714F7E /* PhotoCell.swift in Sources */,
 				9FB7211D2A5867E80076AC95 /* AppDelegate.swift in Sources */,
 				9FF9EB0C2B1D189200C7E7F2 /* FriendsModel.swift in Sources */,
+				9FF9EB122B1D30EE00C7E7F2 /* UserModel.swift in Sources */,
 				9FB7211F2A5867E80076AC95 /* SceneDelegate.swift in Sources */,
+				9FF9EB102B1D2FE800C7E7F2 /* PhotosModel.swift in Sources */,
 				9FF9EB0E2B1D2D9D00C7E7F2 /* GroupsModel.swift in Sources */,
 				9FF9EB092B1D0CCC00C7E7F2 /* NetworkService.swift in Sources */,
 				9F3E8B662A6CAA7A00714F7E /* GroupCell.swift in Sources */,

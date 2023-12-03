@@ -8,7 +8,7 @@
 
 import UIKit
 import WebKit
-		
+
 
 class ViewController: UIViewController {
     
@@ -47,19 +47,19 @@ class ViewController: UIViewController {
         tabBarController.viewControllers = controllers
         
         guard let firstScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-                      let firstWindow = firstScene.windows.first else {
-                    return
-                }
-                
-                
-                firstWindow.rootViewController =  tabBarController
-                
-            }
-            
-            
+              let firstWindow = firstScene.windows.first else {
+            return
         }
-
+        
+        
+        firstWindow.rootViewController =  tabBarController
+        
+    }
     
+    
+}
+
+
 extension ViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, decidePolicyFor navigationResponce:
                  WKNavigationResponse, decisionHandler: @escaping
