@@ -26,7 +26,10 @@ class ViewController: UIViewController {
         
         let url = URL(string: "https://oauth.vk.com/authorize?client_id=" + Credentials.clientID.value +
                       "&redirect_uri=https://oauth.vk.com/blank.html&scope=262150&display=mobile&response_type=token")
-        webView.load(URLRequest(url: url!))
+        guard let url else{
+            return
+        }
+        webView.load(URLRequest(url: url))
     }
     
     private func setupViews() {
@@ -34,10 +37,11 @@ class ViewController: UIViewController {
     }
     
     private func tap() {
-        let tab1 = UINavigationController(rootViewController: FriendViewController())
+        
+        let tab1 = UINavigationController(rootViewController: FriendViewController(networkService: NetworkService(), models: [], fileCache: FileCache()))
         let tab2 = UINavigationController(rootViewController: GroupsViewController())
         let tab3 = UINavigationController(rootViewController: PhotosViewController(collectionViewLayout: UICollectionViewFlowLayout()))
-        
+              
         tab1.tabBarItem.title = "Friends"
         tab2.tabBarItem.title = "Groups"
         tab3.tabBarItem.title = "Photos"
