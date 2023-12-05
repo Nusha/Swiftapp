@@ -55,13 +55,10 @@ class ViewController: UIViewController {
               let firstWindow = firstScene.windows.first else {
             return
         }
-        
-        
+               
         firstWindow.rootViewController =  tabBarController
         
     }
-    
-    
 }
 
 
