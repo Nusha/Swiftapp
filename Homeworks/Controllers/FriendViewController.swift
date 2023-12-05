@@ -59,7 +59,7 @@ final class FriendViewController: UITableViewController {
             }
             let model = models[indexPath.row]
             cell.updateCell(model: model)
-            cell.tap = { [weak self]  text, photo in self?.navigationController?.pushViewController(ProfileController(name: text, photo: photo, isUserProfile: false), animated: true)}
+            cell.tap = { [weak self]  text, photo in self?.navigationController?.pushViewController(ProfileViewController(name: text, photo: photo, isUserProfile: false), animated: true)}
             return cell
         }
         /// getting friends from network or DB
@@ -98,7 +98,7 @@ final class FriendViewController: UITableViewController {
             animation.type = .moveIn
             animation.duration = 3
             navigationController?.view.layer.add(animation, forKey: nil)
-            navigationController?.pushViewController(ProfileController(isUserProfile: true), animated: false)
+            navigationController?.pushViewController(ProfileViewController(isUserProfile: true), animated: false)
         }
         
         /// Update info by pulling down

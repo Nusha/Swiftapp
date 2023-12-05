@@ -11,6 +11,8 @@
 		9F3656292B1F442200AA1378 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3656282B1F442200AA1378 /* Theme.swift */; };
 		9F36562C2B1F461C00AA1378 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F36562A2B1F461C00AA1378 /* DataModel.xcdatamodeld */; };
 		9F36562E2B1F492400AA1378 /* FileCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F36562D2B1F492400AA1378 /* FileCache.swift */; };
+		9F3656302B1F53F200AA1378 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F36562F2B1F53F200AA1378 /* DateHelper.swift */; };
+		9F3656322B1F586400AA1378 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3656312B1F586400AA1378 /* ProfileViewController.swift */; };
 		9F3E8B602A6C92AC00714F7E /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E8B5F2A6C92AC00714F7E /* FriendViewController.swift */; };
 		9F3E8B622A6C971700714F7E /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E8B612A6C971700714F7E /* FriendCell.swift */; };
 		9F3E8B642A6CA89E00714F7E /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E8B632A6CA89E00714F7E /* GroupsViewController.swift */; };
@@ -36,6 +38,8 @@
 		9F3656282B1F442200AA1378 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		9F36562B2B1F461C00AA1378 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		9F36562D2B1F492400AA1378 /* FileCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCache.swift; sourceTree = "<group>"; };
+		9F36562F2B1F53F200AA1378 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		9F3656312B1F586400AA1378 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9F3E8B5F2A6C92AC00714F7E /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		9F3E8B612A6C971700714F7E /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		9F3E8B632A6CA89E00714F7E /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 				9F3E8B5F2A6C92AC00714F7E /* FriendViewController.swift */,
 				9F3E8B632A6CA89E00714F7E /* GroupsViewController.swift */,
 				9F3E8B672A6DBE2E00714F7E /* PhotosViewController.swift */,
+				9F3656312B1F586400AA1378 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			children = (
 				9FF9EB082B1D0CCB00C7E7F2 /* NetworkService.swift */,
 				9F36562D2B1F492400AA1378 /* FileCache.swift */,
+				9F36562F2B1F53F200AA1378 /* DateHelper.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -233,12 +239,14 @@
 				9FB721312A586A7B0076AC95 /* LoginViewController.swift in Sources */,
 				9F3E8B622A6C971700714F7E /* FriendCell.swift in Sources */,
 				9F3E8B602A6C92AC00714F7E /* FriendViewController.swift in Sources */,
+				9F3656322B1F586400AA1378 /* ProfileViewController.swift in Sources */,
 				9FB721212A5867E80076AC95 /* ViewController.swift in Sources */,
 				9F3E8B6A2A6DC03C00714F7E /* PhotoCell.swift in Sources */,
 				9F3656252B1E61ED00AA1378 /* Credentials.swift in Sources */,
 				9F3656292B1F442200AA1378 /* Theme.swift in Sources */,
 				9FB7211D2A5867E80076AC95 /* AppDelegate.swift in Sources */,
 				9FF9EB0C2B1D189200C7E7F2 /* FriendsModel.swift in Sources */,
+				9F3656302B1F53F200AA1378 /* DateHelper.swift in Sources */,
 				9FF9EB122B1D30EE00C7E7F2 /* UserModel.swift in Sources */,
 				9FB7211F2A5867E80076AC95 /* SceneDelegate.swift in Sources */,
 				9F36562C2B1F461C00AA1378 /* DataModel.xcdatamodeld in Sources */,
