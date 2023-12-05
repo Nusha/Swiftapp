@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+// depricated after first homework
+
 class LoginViewController: UIViewController {
 
     let logoImageView: UIImageView = {
