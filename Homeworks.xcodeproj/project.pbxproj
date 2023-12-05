@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9F3656252B1E61ED00AA1378 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3656242B1E61ED00AA1378 /* Credentials.swift */; };
+		9F3656292B1F442200AA1378 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3656282B1F442200AA1378 /* Theme.swift */; };
 		9F3E8B602A6C92AC00714F7E /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E8B5F2A6C92AC00714F7E /* FriendViewController.swift */; };
 		9F3E8B622A6C971700714F7E /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E8B612A6C971700714F7E /* FriendCell.swift */; };
 		9F3E8B642A6CA89E00714F7E /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E8B632A6CA89E00714F7E /* GroupsViewController.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		9F3656242B1E61ED00AA1378 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		9F3656282B1F442200AA1378 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		9F3E8B5F2A6C92AC00714F7E /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		9F3E8B612A6C971700714F7E /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		9F3E8B632A6CA89E00714F7E /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				9F3E8B652A6CAA7A00714F7E /* GroupCell.swift */,
 				9F3E8B692A6DC03C00714F7E /* PhotoCell.swift */,
 				9F3E8B612A6C971700714F7E /* FriendCell.swift */,
+				9F3656282B1F442200AA1378 /* Theme.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				9FB721212A5867E80076AC95 /* ViewController.swift in Sources */,
 				9F3E8B6A2A6DC03C00714F7E /* PhotoCell.swift in Sources */,
 				9F3656252B1E61ED00AA1378 /* Credentials.swift in Sources */,
+				9F3656292B1F442200AA1378 /* Theme.swift in Sources */,
 				9FB7211D2A5867E80076AC95 /* AppDelegate.swift in Sources */,
 				9FF9EB0C2B1D189200C7E7F2 /* FriendsModel.swift in Sources */,
 				9FF9EB122B1D30EE00C7E7F2 /* UserModel.swift in Sources */,
