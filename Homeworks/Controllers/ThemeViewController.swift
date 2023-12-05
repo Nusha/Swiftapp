@@ -87,12 +87,15 @@ private extension ThemeViewController {
         Theme.currentTheme = WhiteTheme()
         backgroundColor = Theme.currentTheme.backgroundColor
         delegate?.updateColor()
+        ThemeSaver.putData()
+        
     }
     /// Changes theme on blue
     @objc func tap2() {
         Theme.currentTheme = BlueTheme()
         backgroundColor = Theme.currentTheme.backgroundColor
         delegate?.updateColor()
+        ThemeSaver.putData()
     }
     
     /// Changes theme on green
@@ -100,5 +103,6 @@ private extension ThemeViewController {
         Theme.currentTheme = GreenTheme()
         backgroundColor = Theme.currentTheme.backgroundColor
         delegate?.updateColor()
+        ThemeSaver.putData()
     }
 }
