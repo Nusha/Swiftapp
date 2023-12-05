@@ -8,7 +8,6 @@
 import UIKit
 
 
-/// Class for Photo cell in collection view
 final class PhotoCell: UICollectionViewCell {
     
     var tap: ((UIImage) -> Void)?
@@ -23,8 +22,6 @@ final class PhotoCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    /// Updating photo in cell
-    /// - Parameter model: photo model
     func updateCell(model: Photo) {
         DispatchQueue.global().async {
             if let url = URL(string: model.sizes.first?.url ?? ""), let data = try?Data(contentsOf: url)
@@ -35,6 +32,7 @@ final class PhotoCell: UICollectionViewCell {
             }
         }
     }
+    
     private func setupViews() {
         addSubview(imageView)
         setupConstraints()
@@ -50,38 +48,3 @@ final class PhotoCell: UICollectionViewCell {
         ])
     }
 }
-
-
-
-//final class PhotoCell: UICollectionViewCell {
-//    private let photoView = UIImageView(image: UIImage(systemName: "person"))
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        setupViews()
-//            }
-//        required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
-//
-//    private func setupViews() {
-//        addSubview(photoView)
-//        setupConstraints()
-//    }
-//
-//    private func setupConstraints() {
-//        photoView.translatesAutoresizingMaskIntoConstraints = false
-//
-//        NSLayoutConstraint.activate([
-//            photoView.leadingAnchor.constraint(equalTo: leadingAnchor),
-//            photoView.trailingAnchor.constraint(equalTo: trailingAnchor),
-//            photoView.topAnchor.constraint(equalTo: topAnchor),
-//            photoView.bottomAnchor.constraint(equalTo: bottomAnchor)
-//        ])
-//    }
-//
-//    override func prepareForReuse() {
-//        super.prepareForReuse()
-//        photoView.image = nil
-//    }
-//
-//}

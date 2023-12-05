@@ -8,14 +8,12 @@
 import UIKit
 
 enum Credentials {
-  case clientID
-  
-  var value: String {
-      switch self {
-      case .clientID:
-          return "51807895"
-      }
-  }
+    case clientID
+    
+    var value: String {
+        switch self {
+        case .clientID:
+            return "51807895"
+        }
+    }
 }
-
-	

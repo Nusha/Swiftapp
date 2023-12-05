@@ -13,7 +13,7 @@ protocol FileCacheProtocol {
     func fetchFriendDate() -> Date?
     func addFriendDate()
 }
-/// Class wokrs with Core Data
+
 final class FileCache: FileCacheProtocol {
     lazy var persistentContaner:
     NSPersistentContainer = {
@@ -25,8 +25,7 @@ final class FileCache: FileCacheProtocol {
         })
         return persistentContaner
     }()
-    //MARK: SAVER
-    /// Save into db
+    
     func save() {
         if persistentContaner.viewContext.hasChanges {
             do {
@@ -37,9 +36,7 @@ final class FileCache: FileCacheProtocol {
             }
         }
     }
-    //MARK: Wokring with friends
-    /// adding friends into DB
-    /// - Parameter friends: array of friend model
+    
     func addFriends(friends: [Friend]) {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "FriendModelCD")
         for friend in friends {
@@ -59,8 +56,6 @@ final class FileCache: FileCacheProtocol {
         addFriendDate()
     }
     
-    /// Getting friends from DB
-    /// - Returns: array of friend models
     func fetchFriends() -> [Friend] {
         let fetchRequest:
         NSFetchRequest<FriendModelCD> = FriendModelCD.fetchRequest()
@@ -74,8 +69,6 @@ final class FileCache: FileCacheProtocol {
         return newFriends
     }
     
-    
-    /// Saving date of refreshing of BD
     func addFriendDate() {
         _ = NSFetchRequest<NSFetchRequestResult>(entityName: "FriendDate")
         let date = FriendDate(context: persistentContaner.viewContext)
@@ -83,8 +76,6 @@ final class FileCache: FileCacheProtocol {
         save()
     }
     
-    /// Getting date of refreshing of BD
-    /// - Returns: date of last save
     func fetchFriendDate() -> Date? {
         let fetchRequest: NSFetchRequest<FriendDate> = FriendDate.fetchRequest()
         guard let date = try?persistentContaner.viewContext.fetch(fetchRequest) else {
@@ -93,10 +84,6 @@ final class FileCache: FileCacheProtocol {
         return date.first?.date
     }
     
-    //MARK: Wokring with groups
-    
-    /// Adding groups into DB
-    /// - Parameter groups: array of group models
     func addGroups(groups: [Group]) {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "GroupModelCD")
         for group in groups {
@@ -115,9 +102,6 @@ final class FileCache: FileCacheProtocol {
         addGroupDate()
     }
     
-    
-    /// Getting groups from db
-    /// - Returns: array of group models
     func fetchGroups() -> [Group] {
         let fetchRequest:
         NSFetchRequest<GroupModelCD> = GroupModelCD.fetchRequest()
@@ -131,9 +115,6 @@ final class FileCache: FileCacheProtocol {
         return newGroups
     }
     
-    
-    
-    /// Saving date of refreshing of BD
     func addGroupDate() {
         _ = NSFetchRequest<NSFetchRequestResult>(entityName: "GroupDate")
         let date = GroupDate(context: persistentContaner.viewContext)
@@ -141,8 +122,6 @@ final class FileCache: FileCacheProtocol {
         save()
     }
     
-    /// Getting date of refreshing of BD
-    /// - Returns: date of last save
     func fetchGroupdDate() -> Date? {
         let fetchRequest: NSFetchRequest<GroupDate> = GroupDate.fetchRequest()
         guard let date = try?persistentContaner.viewContext.fetch(fetchRequest) else {

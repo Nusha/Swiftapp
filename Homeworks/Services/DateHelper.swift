@@ -8,7 +8,7 @@
 import Foundation
 
 final class DateHelper {
-
+    
     static func getDate(date: Date?) -> String {
         guard let date else {
             return ""
