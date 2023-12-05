@@ -41,10 +41,12 @@ final class PhotoCell: UICollectionViewCell {
     private func setupConstraints() {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            imageView.topAnchor.constraint(equalTo: topAnchor),
-            imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            imageView.bottomAnchor.constraint(equalTo: bottomAnchor)
+            imageView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            imageView.centerYAnchor.constraint(equalTo: centerYAnchor)
+//            imageView.topAnchor.constraint(equalTo: topAnchor),
+//            imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
+//            imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
+//            imageView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
 }

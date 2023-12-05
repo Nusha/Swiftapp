@@ -47,8 +47,6 @@ final class ProfileViewController: UIViewController {
         
     }
     
-    /// Gettint info from net
-    /// - Parameter model: User model
     func updateData(model: User?) {
         guard let model = model else {return}
         DispatchQueue.global().async {
@@ -91,8 +89,8 @@ final class ProfileViewController: UIViewController {
         ])
     }
 }
+
 extension ProfileViewController: ThemeViewDelegate {
-    /// changes color
     func updateColor() {
         view.backgroundColor = Theme.currentTheme.backgroundColor
         nameLabel.textColor = Theme.currentTheme.textColor

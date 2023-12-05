@@ -20,7 +20,7 @@ class GroupCell: UITableViewCell{
         label.numberOfLines = 0
         label.text = "Name"
         label.textAlignment = .center
-        label.backgroundColor = .blue
+        label.backgroundColor = Theme.currentTheme.backgroundColor
         label.textColor = Theme.currentTheme.textColor
         return label
     }()
@@ -30,8 +30,8 @@ class GroupCell: UITableViewCell{
         label.numberOfLines = 0
         label.text = "Description"
         label.textAlignment = .center
-        label.backgroundColor = .blue
-        label.textColor = .white
+        label.backgroundColor = Theme.currentTheme.subtitleTextColor
+        label.textColor = Theme.currentTheme.textColor
         return label
     }()
     

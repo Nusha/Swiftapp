@@ -29,7 +29,7 @@ final class FriendCell: UITableViewCell{
         label.numberOfLines = 0
         label.text = "Name"
         label.textAlignment = .center
-        label.backgroundColor = .blue
+        label.backgroundColor = Theme.currentTheme.backgroundColor
         label.textColor = Theme.currentTheme.textColor
         return label
     }()
@@ -40,10 +40,6 @@ final class FriendCell: UITableViewCell{
         backgroundColor = .clear
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(cellClick))
         addGestureRecognizer(recognizer)
-        //        contentView.addSubview(friendImage)
-        //        contentView.addSubview(name)
-        //        contentView.addSubview(onlineCircle)
-        //        myConstr()
         setupViews()
     }
     
