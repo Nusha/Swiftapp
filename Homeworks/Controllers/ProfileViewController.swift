@@ -20,7 +20,7 @@ final class ProfileViewController: UIViewController {
         label.textAlignment = .center
         return label
     }()
-    private var themeView = ThemeView()
+    private var themeView = ThemeViewController()
     private var isUserProfile: Bool
     
     init(name: String? = nil, photo: UIImage? = nil, isUserProfile: Bool) {

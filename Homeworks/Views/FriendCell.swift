@@ -145,7 +145,7 @@ final class FriendCell: UITableViewCell{
 //            friendImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
 //            friendImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10)
 //        ])
-    }
+//    }
         
         
         
