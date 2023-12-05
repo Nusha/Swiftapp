@@ -60,7 +60,7 @@ final class FriendViewController: UITableViewController {
         cell.tap = { [weak self]  text, photo in self?.navigationController?.pushViewController(ProfileViewController(name: text, photo: photo, isUserProfile: false), animated: true)}
         return cell
     }
-
+    
     func getFriends() {
         networkService.getFriends { [weak self] result
             in
@@ -71,7 +71,7 @@ final class FriendViewController: UITableViewController {
                 DispatchQueue.main.async {
                     self?.tableView.reloadData()
                 }
-            case .failure(_):
+            case .failure:
                 self?.models = self?.fileCache.fetchFriends() ?? []
                 DispatchQueue.main.async {
                     self?.showAlert()
@@ -82,13 +82,13 @@ final class FriendViewController: UITableViewController {
 }
 
 private extension FriendViewController {
-    private func showAlert(){
+    private func showAlert() {
         let date = DateHelper.getDate(date: fileCache.fetchFriendDate())
         let alert = UIAlertController(title: "Проблема с получением данных", message: "Данные актуальны на \(date)", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Закрыть", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
-
+    
     @objc func tap() {
         let animation = CATransition()
         animation.timingFunction = CAMediaTimingFunction(name: .easeOut)
@@ -99,19 +99,20 @@ private extension FriendViewController {
     }
     
     @objc func update() {
-        networkService.getFriends{ [weak self] result in switch result {
-        case .success(let friends):
-            self?.models = friends
-            self?.fileCache.addFriends(friends: friends)
-            DispatchQueue.main.async {
-                self?.tableView.reloadData()
+        networkService.getFriends { [weak self] result in
+            switch result {
+            case .success(let friends):
+                self?.models = friends
+                self?.fileCache.addFriends(friends: friends)
+                DispatchQueue.main.async {
+                    self?.tableView.reloadData()
+                }
+            case .failure:
+                self?.models = self?.fileCache.fetchFriends() ?? []
+                DispatchQueue.main.async {
+                    self?.showAlert()
+                }
             }
-        case .failure(_):
-            self?.models = self?.fileCache.fetchFriends() ?? []
-            DispatchQueue.main.async {
-                self?.showAlert()
-            }
-        }
             DispatchQueue.main.async {
                 self?.refreshControl?.endRefreshing()
             }

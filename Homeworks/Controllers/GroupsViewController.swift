@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class GroupsViewController : UITableViewController{
+final class GroupsViewController: UITableViewController {
     private let networkService = NetworkService()
     private var models: [Group] = []
     private var fileCache = FileCache()
@@ -40,14 +40,14 @@ final class GroupsViewController : UITableViewController{
     }
     
     func getGroups() {
-        networkService.getGroups{ [weak self] result in switch result {
+        networkService.getGroups { [weak self] result in switch result {
         case .success(let groups):
             self?.models = groups
             self?.fileCache.addGroups(groups: groups)
             DispatchQueue.main.async {
                 self?.tableView.reloadData()}
             
-        case .failure(_):
+        case .failure:
             self?.models = self?.fileCache.fetchGroups() ?? []
             DispatchQueue.main.async {
                 self?.showAlert()
@@ -58,14 +58,14 @@ final class GroupsViewController : UITableViewController{
     }
     
     @objc func update() {
-        networkService.getGroups{ [weak self] result in switch result {
+        networkService.getGroups { [weak self] result in switch result {
         case .success(let groups):
             self?.models = groups
             self?.fileCache.addGroups(groups: groups)
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
             }
-        case .failure(_):
+        case .failure:
             self?.models = self?.fileCache.fetchGroups() ?? []
             DispatchQueue.main.async {
                 self?.showAlert()
@@ -79,7 +79,7 @@ final class GroupsViewController : UITableViewController{
 }
 private extension GroupsViewController {
     
-    func showAlert(){
+    func showAlert() {
         let date = DateHelper.getDate(date: fileCache.fetchGroupdDate())
         let alert = UIAlertController(title: "Проблема с получением данных", message: "Данные актуальны на \(date)", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Закрыть", style: .default, handler: nil))

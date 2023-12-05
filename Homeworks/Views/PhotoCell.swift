@@ -7,11 +7,10 @@
 
 import UIKit
 
-
 final class PhotoCell: UICollectionViewCell {
     
     var tap: ((UIImage) -> Void)?
-    private var imageView = UIImageView(image: UIImage(named:"logo"))
+    private var imageView = UIImageView(image: UIImage(named: "logo"))
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -24,8 +23,7 @@ final class PhotoCell: UICollectionViewCell {
     
     func updateCell(model: Photo) {
         DispatchQueue.global().async {
-            if let url = URL(string: model.sizes.first?.url ?? ""), let data = try?Data(contentsOf: url)
-            {
+            if let url = URL(string: model.sizes.first?.url ?? ""), let data = try?Data(contentsOf: url) {
                 DispatchQueue.main.async {
                     self.imageView.image = UIImage(data: data)
                 }

@@ -15,6 +15,7 @@
 		9F3656322B1F586400AA1378 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3656312B1F586400AA1378 /* ProfileViewController.swift */; };
 		9F3656342B1F5B0700AA1378 /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3656332B1F5B0700AA1378 /* ThemeViewController.swift */; };
 		9F3656362B1F60FB00AA1378 /* ThemeSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3656352B1F60FB00AA1378 /* ThemeSaver.swift */; };
+		9F3656382B1FAC5300AA1378 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 9F3656372B1FAC5300AA1378 /* .swiftlint.yml */; };
 		9F3E8B602A6C92AC00714F7E /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E8B5F2A6C92AC00714F7E /* FriendViewController.swift */; };
 		9F3E8B622A6C971700714F7E /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E8B612A6C971700714F7E /* FriendCell.swift */; };
 		9F3E8B642A6CA89E00714F7E /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E8B632A6CA89E00714F7E /* GroupsViewController.swift */; };
@@ -44,6 +45,8 @@
 		9F3656312B1F586400AA1378 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9F3656332B1F5B0700AA1378 /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
 		9F3656352B1F60FB00AA1378 /* ThemeSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSaver.swift; sourceTree = "<group>"; };
+		9F3656372B1FAC5300AA1378 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		9F36563C2B1FC99100AA1378 /* SfiftlintReport.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SfiftlintReport.md; sourceTree = "<group>"; };
 		9F3E8B5F2A6C92AC00714F7E /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		9F3E8B612A6C971700714F7E /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		9F3E8B632A6CA89E00714F7E /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +115,7 @@
 		9FB721102A5867E80076AC95 = {
 			isa = PBXGroup;
 			children = (
+				9F3656372B1FAC5300AA1378 /* .swiftlint.yml */,
 				9FB7211B2A5867E80076AC95 /* Homeworks */,
 				9FB7211A2A5867E80076AC95 /* Products */,
 			);
@@ -143,6 +147,7 @@
 				9F3E8B6B2A6DCC2B00714F7E /* Constants.swift */,
 				9FB0E6332AB8DDDE0063B81B /* main.md */,
 				9F36562A2B1F461C00AA1378 /* DataModel.xcdatamodeld */,
+				9F36563C2B1FC99100AA1378 /* SfiftlintReport.md */,
 			);
 			path = Homeworks;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				9FB721152A5867E80076AC95 /* Sources */,
 				9FB721162A5867E80076AC95 /* Frameworks */,
 				9FB721172A5867E80076AC95 /* Resources */,
+				9F3656392B1FADAE00AA1378 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -227,12 +233,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F3656382B1FAC5300AA1378 /* .swiftlint.yml in Resources */,
 				9FB721292A5867EF0076AC95 /* LaunchScreen.storyboard in Resources */,
 				9FB721262A5867EF0076AC95 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F3656392B1FADAE00AA1378 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n  if which swiftlint >/dev/null; then\n    swiftlint\n    swiftlint --reporter html > ./Homeworks/swiftlint_report.html\n  else\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n  fi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9FB721152A5867E80076AC95 /* Sources */ = {

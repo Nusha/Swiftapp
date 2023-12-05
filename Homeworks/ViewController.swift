@@ -9,14 +9,13 @@
 import UIKit
 import WebKit
 
-
 class ViewController: UIViewController {
     
     private lazy var webView: WKWebView = {
         let webView = WKWebView(frame: 	view.bounds)
         webView.navigationDelegate = self
         return webView
-    } ()
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +24,7 @@ class ViewController: UIViewController {
         setupViews()
         let url = URL(string: "https://oauth.vk.com/authorize?client_id=" + Credentials.clientID.value +
                       "&redirect_uri=https://oauth.vk.com/blank.html&scope=262150&display=mobile&response_type=token")
-        guard let url else{
+        guard let url else {
             return
         }
         webView.load(URLRequest(url: url))
@@ -60,9 +59,10 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: WKNavigationDelegate {
-    func webView(_ webView: WKWebView, decidePolicyFor navigationResponce:
-                 WKNavigationResponse, decisionHandler: @escaping
-                 (WKNavigationResponsePolicy) -> Void) {
+    func webView(_ webView: WKWebView,
+                 decidePolicyFor navigationResponce:
+                 WKNavigationResponse,
+                 decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
         guard let url = navigationResponce.response.url, url.path == "/blank.html", let fragment = url.fragment else {
             decisionHandler(.allow)
             return
@@ -70,7 +70,7 @@ extension ViewController: WKNavigationDelegate {
         let param = fragment
             .components(separatedBy: "&")
             .map { $0.components(separatedBy: "=")}
-            .reduce([String: String]()){ result, param in
+            .reduce([String: String]()) { result, param in
                 var dict = result
                 let key = param[0]
                 let value = param[1]

@@ -17,8 +17,7 @@ final class NetworkService: NetworkServiceProtocol {
     static var token: String? = ""
     static var userId: String? = ""
     
-    func getFriends(completion: @escaping(Result<[Friend], Error>) -> Void)
-    {
+    func getFriends(completion: @escaping(Result<[Friend], Error>) -> Void) {
         guard let url = URL(string: "https://api.vk.com/method/friends.get?fields=photo_400_orig,online&access_token=" + (NetworkService.token ?? "") + "&v=5.131")
         else {
             return
@@ -28,11 +27,11 @@ final class NetworkService: NetworkServiceProtocol {
                 completion(.failure(Error.self as! Error))
                 return
             }
-            if let error = error{
+            if let error = error {
                 completion(.failure(error))
                 return
             }
-            do{
+            do {
                 let friends = try JSONDecoder().decode(FriendsModel.self, from: data)
                 completion(.success(friends.response.items))
             } catch {
@@ -50,7 +49,7 @@ final class NetworkService: NetworkServiceProtocol {
                 completion(.failure(Error.self as! Error))
                 return
             }
-            if let error = error{
+            if let error = error {
                 completion(.failure(error))
                 return}
             do {
@@ -73,8 +72,7 @@ final class NetworkService: NetworkServiceProtocol {
             do {
                 let photos = try JSONDecoder().decode(PhotosModel.self, from: data)
                 completion(photos.response.items)
-            }
-            catch {
+            } catch {
                 print(error)
             }
         }.resume()
@@ -91,8 +89,7 @@ final class NetworkService: NetworkServiceProtocol {
             do {
                 let user = try JSONDecoder().decode(UserModel.self, from: data)
                 completion(user.response.first)
-            }
-            catch {
+            } catch {
                 print(error)
             }
         }.resume()

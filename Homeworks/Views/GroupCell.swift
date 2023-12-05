@@ -7,9 +7,9 @@
 
 import UIKit
 
-class GroupCell: UITableViewCell{
+class GroupCell: UITableViewCell {
     
-    private let image : UIImageView = {
+    private let image: UIImageView = {
         let image = UIImageView()
         image.image = UIImage(systemName: "person")
         return image
@@ -51,8 +51,7 @@ class GroupCell: UITableViewCell{
         groupNameLabel.text = model.name
         descriptionLabel.text = model.description
         DispatchQueue.global().async {
-            if let url = URL(string: model.photo ?? ""), let data = try?Data(contentsOf: url)
-            {
+            if let url = URL(string: model.photo ?? ""), let data = try?Data(contentsOf: url) {
                 DispatchQueue.main.async {
                     self.image.image = UIImage(data: data)
                 }
@@ -60,7 +59,7 @@ class GroupCell: UITableViewCell{
         }
     }
     
-    private func myConstr(){
+    private func myConstr() {
         image.translatesAutoresizingMaskIntoConstraints = false
         groupNameLabel.translatesAutoresizingMaskIntoConstraints = false
         descriptionLabel.translatesAutoresizingMaskIntoConstraints = false

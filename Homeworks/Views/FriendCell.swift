@@ -7,17 +7,13 @@
 
 import UIKit
 
-
-final class FriendCell: UITableViewCell{
-    
+final class FriendCell: UITableViewCell {
     var tap: ((String?, UIImage?) -> Void)?
     
     private var friendImage = UIImageView(image:
                                             UIImage(systemName: "person"))
     
-    
-    
-    private var onlineCircle: UIView = {
+        private var onlineCircle: UIView = {
         let circle = UIView()
         circle.backgroundColor = .gray
         circle.layer.cornerRadius = 10
@@ -34,8 +30,7 @@ final class FriendCell: UITableViewCell{
         return label
     }()
     
-    
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         backgroundColor = .clear
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(cellClick))
@@ -58,8 +53,7 @@ final class FriendCell: UITableViewCell{
             }
         }
         DispatchQueue.global().async {
-            if let url = URL(string: model.photo ?? ""), let data = try?Data(contentsOf: url)
-            {
+            if let url = URL(string: model.photo ?? ""), let data = try?Data(contentsOf: url) {
                 DispatchQueue.main.async {
                     self.friendImage.image = UIImage(data: data)
                 }
@@ -74,7 +68,7 @@ final class FriendCell: UITableViewCell{
         setupConstraints()
     }
     
-    private func setupConstraints(){
+    private func setupConstraints() {
         friendImage.translatesAutoresizingMaskIntoConstraints = false
         text.translatesAutoresizingMaskIntoConstraints = false
         onlineCircle.translatesAutoresizingMaskIntoConstraints = false

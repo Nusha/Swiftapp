@@ -19,8 +19,7 @@ struct Friend: Decodable {
     var lastName: String?
     var photo: String?
     var online: Int?
-    
-    
+ 
     enum CodingKeys: String, CodingKey {
         case id
         case firstName = "first_name"
@@ -29,4 +28,3 @@ struct Friend: Decodable {
         case online
     }
 }
-

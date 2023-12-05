@@ -19,7 +19,6 @@ struct Group: Codable {
     var photo: String?
     var description: String?
     
-
     enum CodingKeys: String, CodingKey {
         case id
         case name

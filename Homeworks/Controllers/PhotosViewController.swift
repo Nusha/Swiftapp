@@ -7,9 +7,7 @@
 
 import UIKit
 
-
-
-class PhotosViewController:UICollectionViewController {
+class PhotosViewController: UICollectionViewController {
     private let networkService = NetworkService()
     private var models: [Photo] = []
     
@@ -19,8 +17,7 @@ class PhotosViewController:UICollectionViewController {
         collectionView.backgroundColor = Theme.currentTheme.backgroundColor
         title = "Photos"
         collectionView.register(PhotoCell.self, forCellWithReuseIdentifier: "Photos")
-        networkService.getPhotos{[weak self] photos in
-            self?.models = photos
+        networkService.getPhotos { [weak self] photos in self?.models = photos
             DispatchQueue.main.async {
                 self?.collectionView.reloadData()
             }

@@ -7,7 +7,6 @@
 
 import UIKit
 
-import UIKit
 protocol ThemeViewDelegate: AnyObject {
     func updateColor()
 }

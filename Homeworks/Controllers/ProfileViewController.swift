@@ -5,7 +5,6 @@
 //  Created by Иван  Балабай  on 05.12.2023.
 //
 
-
 import UIKit
 
 final class ProfileViewController: UIViewController {
@@ -40,7 +39,8 @@ final class ProfileViewController: UIViewController {
         view.backgroundColor = Theme.currentTheme.backgroundColor
         setupViews()
         if isUserProfile {
-            networkService.getProfileInfo{ [weak self] user in self?.updateData(model: user)}
+            networkService.getProfileInfo { [weak self] user in self?.updateData(model: user)
+            }
         } else {
             themeView.isHidden = true
         }

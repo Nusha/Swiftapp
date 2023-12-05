@@ -5,12 +5,12 @@
 ////  Created by Иван  Балабай  on 07.07.2023.
 ////
 //
-//import Foundation
-//import UIKit
+// import Foundation
+// import UIKit
 //
 //// depricated after first homework
 //
-//class LoginViewController: UIViewController {
+// class LoginViewController: UIViewController {
 //
 //    let logoImageView: UIImageView = {
 //            let imageView = UIImageView()
@@ -106,21 +106,21 @@
 //                loginButton.heightAnchor.constraint(equalToConstant: 60)
 //            ])
 //        }
-//    
+//
 //    @objc private func tap() {
 //        let tab1 = UINavigationController(rootViewController: FriendViewController())
 //        let tab2 = UINavigationController(rootViewController: GroupsViewController())
 //        let tab3 = UINavigationController(rootViewController: PhotosViewController(collectionViewLayout: UICollectionViewFlowLayout()))
-//        
+//
 //        tab1.tabBarItem.title = "Friends"
 //        tab2.tabBarItem.title = "Groups"
 //        tab3.tabBarItem.title = "Photos"
-//        
+//
 //        let controllers = [tab1, tab2, tab3]
-//        
+//
 //        let tabBarController = UITabBarController()
 //        tabBarController.viewControllers = controllers
-//        
+//
 //        guard let firstScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
 //              let firstWindow = firstScene.windows.first
 //        else {

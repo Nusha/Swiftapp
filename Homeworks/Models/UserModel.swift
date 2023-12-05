@@ -15,7 +15,6 @@ struct User: Decodable {
     var lastName: String?
     var photo: String?
     
-
     enum CodingKeys: String, CodingKey {
         case firstName = "first_name"
         case lastName = "last_name"

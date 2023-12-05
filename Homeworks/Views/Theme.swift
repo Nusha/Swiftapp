@@ -41,7 +41,6 @@ final class BlueTheme: ThemeProtocol {
     var type: AllAppTheme = .blue
 }
 
-
 final class GreenTheme: ThemeProtocol {
     var backgroundColor: UIColor = UIColor(red: 206/255, green: 1, blue: 162/255, alpha: 1)
     var textColor: UIColor = .brown

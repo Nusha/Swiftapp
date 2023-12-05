@@ -1,0 +1,20 @@
+  disabled_rules:
+    - trailing_whitespace
+#    - line_length
+    - force_cast
+    - comma
+    - identifier_name
+    - cyclomatic_complexity
+    
+  excluded:
+     - Info.*
+     - DataModel.*
+##    - ***/Info.plist
+  line_length:
+    warning: 180
+    error: 200
+#  exclude:
+#    - Info.*
+#    - DataModel.*
+  
+#  reporter: "html"
