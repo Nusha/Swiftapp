@@ -149,9 +149,9 @@ class GroupCell: UITableViewCell{
 //            subtitle.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 10),
 //            subtitle.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
 //            subtitle.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10)
-                                    ])
+//                                    ])
         
-    }
+//    }
     
     
     
@@ -167,4 +167,4 @@ class GroupCell: UITableViewCell{
 //        // Configure the view for the selected state
 //    }
 
-}
+//}
