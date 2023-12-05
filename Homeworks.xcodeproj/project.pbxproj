@@ -72,6 +72,16 @@
 			path = Credentials;
 			sourceTree = "<group>";
 		};
+		9F3656262B1F311400AA1378 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F3E8B652A6CAA7A00714F7E /* GroupCell.swift */,
+				9F3E8B692A6DC03C00714F7E /* PhotoCell.swift */,
+				9F3E8B612A6C971700714F7E /* FriendCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9FB721102A5867E80076AC95 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +101,7 @@
 		9FB7211B2A5867E80076AC95 /* Homeworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F3656262B1F311400AA1378 /* View */,
 				9F3656232B1E61B600AA1378 /* Credentials */,
 				9FF9EB0A2B1D184200C7E7F2 /* Models */,
 				9FF9EB072B1D0B3600C7E7F2 /* Services */,
@@ -102,11 +113,8 @@
 				9FB7212A2A5867EF0076AC95 /* Info.plist */,
 				9FB721302A586A7B0076AC95 /* LoginViewController.swift */,
 				9F3E8B5F2A6C92AC00714F7E /* FriendViewController.swift */,
-				9F3E8B612A6C971700714F7E /* FriendCell.swift */,
 				9F3E8B632A6CA89E00714F7E /* GroupsViewController.swift */,
-				9F3E8B652A6CAA7A00714F7E /* GroupCell.swift */,
 				9F3E8B672A6DBE2E00714F7E /* PhotosViewController.swift */,
-				9F3E8B692A6DC03C00714F7E /* PhotoCell.swift */,
 				9F3E8B6B2A6DCC2B00714F7E /* Constants.swift */,
 				9FB0E6332AB8DDDE0063B81B /* main.md */,
 			);
