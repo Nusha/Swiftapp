@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     private lazy var webView: WKWebView = {
         let webView = WKWebView(frame: 	view.bounds)
+        webView.isAccessibilityElement = true
         webView.navigationDelegate = self
         return webView
     }()

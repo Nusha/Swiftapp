@@ -21,6 +21,14 @@
 		9F3656522B1FDE5700AA1378 /* NetworkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3656502B1FDE5700AA1378 /* NetworkServiceMock.swift */; };
 		9F3656542B1FE3F800AA1378 /* FileCacheMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3656532B1FE3F800AA1378 /* FileCacheMock.swift */; };
 		9F3656552B1FE3F800AA1378 /* FileCacheMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3656532B1FE3F800AA1378 /* FileCacheMock.swift */; };
+		9F3656572B1FE90D00AA1378 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3656562B1FE90D00AA1378 /* NetworkServiceTests.swift */; };
+		9F3656592B1FEA3000AA1378 /* FileCacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3656582B1FEA3000AA1378 /* FileCacheTests.swift */; };
+		9F36565B2B1FEC9900AA1378 /* FriendCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F36565A2B1FEC9900AA1378 /* FriendCellTests.swift */; };
+		9F36566A2B1FFA0600AA1378 /* HomeworksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3656692B1FFA0600AA1378 /* HomeworksUITestsLaunchTests.swift */; };
+		9F3656702B1FFA2D00AA1378 /* ViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F36565C2B1FF42200AA1378 /* ViewControllerUITests.swift */; };
+		9F3656752B1FFF9200AA1378 /* FriendViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3656742B1FFF9200AA1378 /* FriendViewControllerUITests.swift */; };
+		9F3656762B1FFF9200AA1378 /* FriendViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3656742B1FFF9200AA1378 /* FriendViewControllerUITests.swift */; };
+		9F3656772B1FFF9200AA1378 /* FriendViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3656742B1FFF9200AA1378 /* FriendViewControllerUITests.swift */; };
 		9F3E8B602A6C92AC00714F7E /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E8B5F2A6C92AC00714F7E /* FriendViewController.swift */; };
 		9F3E8B622A6C971700714F7E /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E8B612A6C971700714F7E /* FriendCell.swift */; };
 		9F3E8B642A6CA89E00714F7E /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E8B632A6CA89E00714F7E /* GroupsViewController.swift */; };
@@ -49,6 +57,13 @@
 			remoteGlobalIDString = 9FB721182A5867E80076AC95;
 			remoteInfo = Homeworks;
 		};
+		9F36566B2B1FFA0600AA1378 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FB721112A5867E80076AC95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FB721182A5867E80076AC95;
+			remoteInfo = Homeworks;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +81,13 @@
 		9F36564E2B1FD4EA00AA1378 /* FriendViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewControllerTests.swift; sourceTree = "<group>"; };
 		9F3656502B1FDE5700AA1378 /* NetworkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceMock.swift; sourceTree = "<group>"; };
 		9F3656532B1FE3F800AA1378 /* FileCacheMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCacheMock.swift; sourceTree = "<group>"; };
+		9F3656562B1FE90D00AA1378 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		9F3656582B1FEA3000AA1378 /* FileCacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCacheTests.swift; sourceTree = "<group>"; };
+		9F36565A2B1FEC9900AA1378 /* FriendCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCellTests.swift; sourceTree = "<group>"; };
+		9F36565C2B1FF42200AA1378 /* ViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUITests.swift; sourceTree = "<group>"; };
+		9F3656652B1FFA0600AA1378 /* HomeworksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeworksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F3656692B1FFA0600AA1378 /* HomeworksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9F3656742B1FFF9200AA1378 /* FriendViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewControllerUITests.swift; sourceTree = "<group>"; };
 		9F3E8B5F2A6C92AC00714F7E /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		9F3E8B612A6C971700714F7E /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		9F3E8B632A6CA89E00714F7E /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +113,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		9F3656422B1FD4A900AA1378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F3656622B1FFA0600AA1378 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -144,8 +173,21 @@
 				9F36564E2B1FD4EA00AA1378 /* FriendViewControllerTests.swift */,
 				9F3656502B1FDE5700AA1378 /* NetworkServiceMock.swift */,
 				9F3656532B1FE3F800AA1378 /* FileCacheMock.swift */,
+				9F3656562B1FE90D00AA1378 /* NetworkServiceTests.swift */,
+				9F3656582B1FEA3000AA1378 /* FileCacheTests.swift */,
+				9F36565A2B1FEC9900AA1378 /* FriendCellTests.swift */,
 			);
 			path = HomeworksTests;
+			sourceTree = "<group>";
+		};
+		9F3656662B1FFA0600AA1378 /* HomeworksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9F36565C2B1FF42200AA1378 /* ViewControllerUITests.swift */,
+				9F3656692B1FFA0600AA1378 /* HomeworksUITestsLaunchTests.swift */,
+				9F3656742B1FFF9200AA1378 /* FriendViewControllerUITests.swift */,
+			);
+			path = HomeworksUITests;
 			sourceTree = "<group>";
 		};
 		9FB721102A5867E80076AC95 = {
@@ -154,6 +196,7 @@
 				9F3656372B1FAC5300AA1378 /* .swiftlint.yml */,
 				9FB7211B2A5867E80076AC95 /* Homeworks */,
 				9F3656462B1FD4A900AA1378 /* HomeworksTests */,
+				9F3656662B1FFA0600AA1378 /* HomeworksUITests */,
 				9FB7211A2A5867E80076AC95 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -163,6 +206,7 @@
 			children = (
 				9FB721192A5867E80076AC95 /* Homeworks.app */,
 				9F3656452B1FD4A900AA1378 /* HomeworksTests.xctest */,
+				9F3656652B1FFA0600AA1378 /* HomeworksUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,6 +277,24 @@
 			productReference = 9F3656452B1FD4A900AA1378 /* HomeworksTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9F3656642B1FFA0600AA1378 /* HomeworksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F36566D2B1FFA0600AA1378 /* Build configuration list for PBXNativeTarget "HomeworksUITests" */;
+			buildPhases = (
+				9F3656612B1FFA0600AA1378 /* Sources */,
+				9F3656622B1FFA0600AA1378 /* Frameworks */,
+				9F3656632B1FFA0600AA1378 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F36566C2B1FFA0600AA1378 /* PBXTargetDependency */,
+			);
+			name = HomeworksUITests;
+			productName = HomeworksUITests;
+			productReference = 9F3656652B1FFA0600AA1378 /* HomeworksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		9FB721182A5867E80076AC95 /* Homeworks */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FB7212D2A5867EF0076AC95 /* Build configuration list for PBXNativeTarget "Homeworks" */;
@@ -265,6 +327,10 @@
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = 9FB721182A5867E80076AC95;
 					};
+					9F3656642B1FFA0600AA1378 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 9FB721182A5867E80076AC95;
+					};
 					9FB721182A5867E80076AC95 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -285,12 +351,20 @@
 			targets = (
 				9FB721182A5867E80076AC95 /* Homeworks */,
 				9F3656442B1FD4A900AA1378 /* HomeworksTests */,
+				9F3656642B1FFA0600AA1378 /* HomeworksUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9F3656432B1FD4A900AA1378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F3656632B1FFA0600AA1378 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -335,8 +409,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F3656522B1FDE5700AA1378 /* NetworkServiceMock.swift in Sources */,
+				9F3656762B1FFF9200AA1378 /* FriendViewControllerUITests.swift in Sources */,
 				9F36564F2B1FD4EA00AA1378 /* FriendViewControllerTests.swift in Sources */,
+				9F3656572B1FE90D00AA1378 /* NetworkServiceTests.swift in Sources */,
+				9F36565B2B1FEC9900AA1378 /* FriendCellTests.swift in Sources */,
+				9F3656592B1FEA3000AA1378 /* FileCacheTests.swift in Sources */,
 				9F3656552B1FE3F800AA1378 /* FileCacheMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F3656612B1FFA0600AA1378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F36566A2B1FFA0600AA1378 /* HomeworksUITestsLaunchTests.swift in Sources */,
+				9F3656702B1FFA2D00AA1378 /* ViewControllerUITests.swift in Sources */,
+				9F3656772B1FFF9200AA1378 /* FriendViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +443,7 @@
 				9F3E8B6A2A6DC03C00714F7E /* PhotoCell.swift in Sources */,
 				9F3656252B1E61ED00AA1378 /* Credentials.swift in Sources */,
 				9F3656292B1F442200AA1378 /* Theme.swift in Sources */,
+				9F3656752B1FFF9200AA1378 /* FriendViewControllerUITests.swift in Sources */,
 				9FB7211D2A5867E80076AC95 /* AppDelegate.swift in Sources */,
 				9FF9EB0C2B1D189200C7E7F2 /* FriendsModel.swift in Sources */,
 				9F3656542B1FE3F800AA1378 /* FileCacheMock.swift in Sources */,
@@ -380,6 +469,11 @@
 			isa = PBXTargetDependency;
 			target = 9FB721182A5867E80076AC95 /* Homeworks */;
 			targetProxy = 9F3656492B1FD4A900AA1378 /* PBXContainerItemProxy */;
+		};
+		9F36566C2B1FFA0600AA1378 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FB721182A5867E80076AC95 /* Homeworks */;
+			targetProxy = 9F36566B2B1FFA0600AA1378 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -426,6 +520,38 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Homeworks.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Homeworks";
+			};
+			name = Release;
+		};
+		9F36566E2B1FFA0600AA1378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.frequenza.test.HomeworksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Homeworks;
+			};
+			name = Debug;
+		};
+		9F36566F2B1FFA0600AA1378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.frequenza.test.HomeworksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Homeworks;
 			};
 			name = Release;
 		};
@@ -603,6 +729,15 @@
 			buildConfigurations = (
 				9F36564C2B1FD4A900AA1378 /* Debug */,
 				9F36564D2B1FD4A900AA1378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F36566D2B1FFA0600AA1378 /* Build configuration list for PBXNativeTarget "HomeworksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F36566E2B1FFA0600AA1378 /* Debug */,
+				9F36566F2B1FFA0600AA1378 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -19,7 +19,11 @@ final class FriendCell: UITableViewCell {
         circle.layer.cornerRadius = 10
         return circle
     }()
-    
+    var _onlineCircle: UIView {
+       get {
+           return onlineCircle
+       }
+    }
     private var text: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
