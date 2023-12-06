@@ -26,9 +26,6 @@
 		9F36565B2B1FEC9900AA1378 /* FriendCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F36565A2B1FEC9900AA1378 /* FriendCellTests.swift */; };
 		9F36566A2B1FFA0600AA1378 /* HomeworksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3656692B1FFA0600AA1378 /* HomeworksUITestsLaunchTests.swift */; };
 		9F3656702B1FFA2D00AA1378 /* ViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F36565C2B1FF42200AA1378 /* ViewControllerUITests.swift */; };
-		9F3656752B1FFF9200AA1378 /* FriendViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3656742B1FFF9200AA1378 /* FriendViewControllerUITests.swift */; };
-		9F3656762B1FFF9200AA1378 /* FriendViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3656742B1FFF9200AA1378 /* FriendViewControllerUITests.swift */; };
-		9F3656772B1FFF9200AA1378 /* FriendViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3656742B1FFF9200AA1378 /* FriendViewControllerUITests.swift */; };
 		9F3E8B602A6C92AC00714F7E /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E8B5F2A6C92AC00714F7E /* FriendViewController.swift */; };
 		9F3E8B622A6C971700714F7E /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E8B612A6C971700714F7E /* FriendCell.swift */; };
 		9F3E8B642A6CA89E00714F7E /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3E8B632A6CA89E00714F7E /* GroupsViewController.swift */; };
@@ -87,7 +84,6 @@
 		9F36565C2B1FF42200AA1378 /* ViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUITests.swift; sourceTree = "<group>"; };
 		9F3656652B1FFA0600AA1378 /* HomeworksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeworksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F3656692B1FFA0600AA1378 /* HomeworksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworksUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9F3656742B1FFF9200AA1378 /* FriendViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewControllerUITests.swift; sourceTree = "<group>"; };
 		9F3E8B5F2A6C92AC00714F7E /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
 		9F3E8B612A6C971700714F7E /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		9F3E8B632A6CA89E00714F7E /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
@@ -185,7 +181,6 @@
 			children = (
 				9F36565C2B1FF42200AA1378 /* ViewControllerUITests.swift */,
 				9F3656692B1FFA0600AA1378 /* HomeworksUITestsLaunchTests.swift */,
-				9F3656742B1FFF9200AA1378 /* FriendViewControllerUITests.swift */,
 			);
 			path = HomeworksUITests;
 			sourceTree = "<group>";
@@ -409,7 +404,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F3656522B1FDE5700AA1378 /* NetworkServiceMock.swift in Sources */,
-				9F3656762B1FFF9200AA1378 /* FriendViewControllerUITests.swift in Sources */,
 				9F36564F2B1FD4EA00AA1378 /* FriendViewControllerTests.swift in Sources */,
 				9F3656572B1FE90D00AA1378 /* NetworkServiceTests.swift in Sources */,
 				9F36565B2B1FEC9900AA1378 /* FriendCellTests.swift in Sources */,
@@ -424,7 +418,6 @@
 			files = (
 				9F36566A2B1FFA0600AA1378 /* HomeworksUITestsLaunchTests.swift in Sources */,
 				9F3656702B1FFA2D00AA1378 /* ViewControllerUITests.swift in Sources */,
-				9F3656772B1FFF9200AA1378 /* FriendViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +436,6 @@
 				9F3E8B6A2A6DC03C00714F7E /* PhotoCell.swift in Sources */,
 				9F3656252B1E61ED00AA1378 /* Credentials.swift in Sources */,
 				9F3656292B1F442200AA1378 /* Theme.swift in Sources */,
-				9F3656752B1FFF9200AA1378 /* FriendViewControllerUITests.swift in Sources */,
 				9FB7211D2A5867E80076AC95 /* AppDelegate.swift in Sources */,
 				9FF9EB0C2B1D189200C7E7F2 /* FriendsModel.swift in Sources */,
 				9F3656542B1FE3F800AA1378 /* FileCacheMock.swift in Sources */,
